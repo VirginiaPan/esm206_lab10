@@ -1,0 +1,43 @@
+---
+title: "esm 206 lab 10"
+author: "Virginia Pan"
+date: "11/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install packages
+library(beepr)
+library(praise)
+library(cowsay)
+library(paletteer)
+library(sf)
+```
+
+## beepr beeps
+
+Use `beep()` to make an audio alert when your code is done running 
+
+```{r, eval=FALSE}
+for(i in rev(seq(1:999))) {
+  print(paste(i, "bottels of beer on the wall"))
+}
+
+beep(4)
+```
+
+## praise and cowsay - kind and fun
+
+```{r}
+praise("${Exclamation}, ${EXCLAMATION}...${exclamation}!!!!")
+
+
+praise("Holy ${creating}, Batmand - this code is ${ADJECTIVE}")
+```
+
+## Use cowasy::say to make a character say something to you
+
+
+
